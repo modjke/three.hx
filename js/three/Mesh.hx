@@ -9,10 +9,8 @@ extern class Mesh extends Object3D
 	var material : Material;
 	var drawMode : TrianglesDrawModes;
 
-	@:overload(function(?geometry:Geometry,?material:Material):Void{})
-	@:overload(function():Void{})	
-	@:overload(function(?geometry:BufferGeometry, ?material:Material):Void{})
-	function new() : Void;
+	@:overload(function(?geometry:BufferGeometry,?material:Material):Void{})	
+	function new(?geometry:Geometry, ?material:Material) : Void;
 	
 	function setDrawMode(drawMode:TrianglesDrawModes) : Void;
 	function updateMorphTargets() : Void;
