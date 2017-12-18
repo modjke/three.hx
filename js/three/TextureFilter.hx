@@ -1,8 +1,13 @@
 package js.three;
 
-import js.html.*;
-
-@:native("THREE.TextureFilter")
-extern enum TextureFilter
+@:native("THREE")
+@:enum
+extern abstract TextureFilter(Int)
 {
+	var NearestFilter;
+	var NearestMipMapNearestFilter;
+	var NearestMipMapLinearFilter;
+	var LinearFilter;
+	var LinearMipMapNearestFilter;
+	var LinearMipMapLinearFilter;
 }

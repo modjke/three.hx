@@ -1,8 +1,10 @@
 package js.three;
 
-import js.html.*;
-
-@:native("THREE.Wrapping")
-extern enum Wrapping
+@:native("THREE")
+@:enum
+extern abstract Wrapping(Int)
 {
+	var RepeatWrapping;
+	var ClampToEdgeWrapping;
+	var MirroredRepeatWrapping;
 }
